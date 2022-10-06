@@ -32,9 +32,11 @@
   --breakpoint-md: 740px;
   --breakpoint-lg: 980px;
   --breakpoint-xl: 1264px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 *,
 :after,
@@ -63,7 +65,8 @@ section {
 }
 body {
   margin: 0;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -168,7 +171,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace;
   font-size: 1em;
 }
 pre {
@@ -332,7 +336,8 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.5rem;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.25;
 }
@@ -2184,18 +2189,21 @@ mark {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out, -moz-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out, -moz-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -moz-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out, -moz-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -5201,7 +5209,8 @@ input[type="submit"].btn-block {
   }
 }
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace !important;
 }
 .text-justify {
   text-align: justify !important;
@@ -5399,7 +5408,8 @@ a.text-white:hover {
   -o-transition-property: -o-transform;
   -moz-transition-property: transform, -moz-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+  transition-property: transform, -webkit-transform, -moz-transform,
+    -o-transform;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -5434,7 +5444,8 @@ a.text-white:hover {
   -o-transition-property: -o-transform;
   -moz-transition-property: transform, -moz-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+  transition-property: transform, -webkit-transform, -moz-transform,
+    -o-transform;
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;
@@ -5454,7 +5465,8 @@ a.text-white:hover {
   -o-transition-property: height, -o-transform;
   -moz-transition-property: transform, height, -moz-transform;
   transition-property: transform, height;
-  transition-property: transform, height, -webkit-transform, -moz-transform, -o-transform;
+  transition-property: transform, height, -webkit-transform, -moz-transform,
+    -o-transform;
 }
 .swiper-container-3d {
   -webkit-perspective: 1200px;
@@ -5485,30 +5497,74 @@ a.text-white:hover {
   z-index: 10;
 }
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
-  background-image: -moz- oldlinear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgba(0, 0, 0, 0.5)),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background-image: -moz-
+    oldlinear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
   background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
 }
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
-  background-image: -moz- oldlinear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 0.5)),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background-image: -moz-
+    oldlinear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
 }
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
-  background-image: -moz- oldlinear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.5)),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background-image: -moz-
+    oldlinear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
 }
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
-  background-image: -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background-image: -moz-
+    oldlinear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
 }
@@ -5627,11 +5683,14 @@ button.swiper-pagination-bullet {
   -moz-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
-.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 6px 0;
   display: block;
 }
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-vertical
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -5640,19 +5699,25 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   width: 8px;
 }
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-vertical
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: top 0.2s, -webkit-transform 0.2s;
   transition: top 0.2s, -webkit-transform 0.2s;
   -o-transition: 0.2s top, 0.2s -o-transform;
   -moz-transition: 0.2s transform, 0.2s top, 0.2s -moz-transform;
   transition: transform 0.2s, top 0.2s;
-  transition: transform 0.2s, top 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
+  transition: transform 0.2s, top 0.2s, -webkit-transform 0.2s,
+    -moz-transform 0.2s, -o-transform 0.2s;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 4px;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -5661,21 +5726,27 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   white-space: nowrap;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   -webkit-transition: left 0.2s, -webkit-transform 0.2s;
   transition: left 0.2s, -webkit-transform 0.2s;
   -o-transition: 0.2s left, 0.2s -o-transform;
   -moz-transition: 0.2s transform, 0.2s left, 0.2s -moz-transform;
   transition: transform 0.2s, left 0.2s;
-  transition: transform 0.2s, left 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
+  transition: transform 0.2s, left 0.2s, -webkit-transform 0.2s,
+    -moz-transform 0.2s, -o-transform 0.2s;
 }
-.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal.swiper-container-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
   -webkit-transition: right 0.2s, -webkit-transform 0.2s;
   transition: right 0.2s, -webkit-transform 0.2s;
   -o-transition: 0.2s right, 0.2s -o-transform;
   -moz-transition: 0.2s transform, 0.2s right, 0.2s -moz-transform;
   transition: transform 0.2s, right 0.2s;
-  transition: transform 0.2s, right 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
+  transition: transform 0.2s, right 0.2s, -webkit-transform 0.2s,
+    -moz-transform 0.2s, -o-transform 0.2s;
 }
 .swiper-pagination-progressbar {
   background: rgba(0, 0, 0, 0.25);
@@ -5699,7 +5770,9 @@ button.swiper-pagination-bullet {
   -o-transform-origin: left top;
   transform-origin: left top;
 }
-.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.swiper-container-rtl
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
   -webkit-transform-origin: right top;
   -moz-transform-origin: right top;
   -ms-transform-origin: right top;
@@ -5707,13 +5780,15 @@ button.swiper-pagination-bullet {
   transform-origin: right top;
 }
 .swiper-container-horizontal > .swiper-pagination-progressbar,
-.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-container-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 100%;
   height: 4px;
   left: 0;
   top: 0;
 }
-.swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-container-horizontal
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
 .swiper-container-vertical > .swiper-pagination-progressbar {
   width: 4px;
   height: 100%;
@@ -5726,7 +5801,8 @@ button.swiper-pagination-bullet {
 .swiper-pagination-progressbar.swiper-pagination-white {
   background: hsla(0, 0%, 100%, 0.25);
 }
-.swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill {
+.swiper-pagination-progressbar.swiper-pagination-white
+  .swiper-pagination-progressbar-fill {
   background: #fff;
 }
 .swiper-pagination-black .swiper-pagination-bullet-active {
@@ -5735,7 +5811,8 @@ button.swiper-pagination-bullet {
 .swiper-pagination-progressbar.swiper-pagination-black {
   background: rgba(0, 0, 0, 0.25);
 }
-.swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
+.swiper-pagination-progressbar.swiper-pagination-black
+  .swiper-pagination-progressbar-fill {
   background: #000;
 }
 .swiper-pagination-lock {
@@ -6495,8 +6572,10 @@ body {
 @font-face {
   font-family: gw-icon;
   src: url(/assets/fonts/gw-icon.eot);
-  src: url(/assets/fonts/gw-icon.eot?#iefix) format("eot"), url(/assets/fonts/gw-icon.woff2) format("woff2"),
-    url(/assets/fonts/gw-icon.woff) format("woff"), url(/assets/fonts/gw-icon.ttf) format("truetype"),
+  src: url(/assets/fonts/gw-icon.eot?#iefix) format("eot"),
+    url(/assets/fonts/gw-icon.woff2) format("woff2"),
+    url(/assets/fonts/gw-icon.woff) format("woff"),
+    url(/assets/fonts/gw-icon.ttf) format("truetype"),
     url(/assets/fonts/gw-icon.svg#gw-icon) format("svg");
   font-weight: 400;
   font-style: normal;
@@ -6769,6 +6848,9 @@ ul {
   .gw-desktop {
     display: none;
   }
+  .about-bitu__mobile {
+    padding-bottom: 60px;
+  }
 }
 @media (min-width: 980px) {
   .gw-mobile {
@@ -6817,6 +6899,7 @@ ul {
   padding: 15px 0;
   border-top: 1px solid hsla(0, 0%, 100%, 0.2);
   font-size: 14px;
+  width: 100vw;
 }
 @media (max-width: 979.98px) {
   .gw-footer {
@@ -7024,7 +7107,8 @@ ul {
 .gw-section__prev {
   overflow: hidden;
   padding: 6px;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 4px 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.05),
+    4px 8px 16px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 4px 8px 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 4px 8px 16px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 50%;
@@ -7635,22 +7719,8 @@ ul {
     display: none;
   }
 
-  .gw-visual__wrapper {
+  .banner-form__select {
     flex-direction: column;
-  }
-
-  .gw-visual__wrapper .form-row {
-    flex-direction: column;
-  }
-  .banner-image, .banner-form {
-    width: 100% !important;
-  }
-
-  .banner-image {
-    /* height: auto !important; */
-    background-size: contain;
-    height: 222px !important;
-
   }
 }
 .gw-visual__content {
@@ -7659,9 +7729,12 @@ ul {
 .gw-visual__wrapper {
   display: inline-block;
   overflow: hidden;
-  -webkit-box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02), 32px -32px 50px rgba(0, 0, 0, 0.02);
-  -moz-box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02), 32px -32px 50px rgba(0, 0, 0, 0.02);
-  box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02), 32px -32px 50px rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02),
+    32px -32px 50px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02),
+    32px -32px 50px rgba(0, 0, 0, 0.02);
+  box-shadow: -32px -32px 50px rgba(0, 0, 0, 0.02),
+    32px -32px 50px rgba(0, 0, 0, 0.02);
 }
 .gw-visual__wrapper img {
   -webkit-border-radius: 14px;
@@ -7703,8 +7776,8 @@ ul {
 @media (min-width: 1264px) {
   .gw-section--block-2 .gw-section__content,
   .gw-section--block-4 .gw-section__content {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 740px) and (max-width: 1263.98px) {
@@ -8896,7 +8969,9 @@ ul {
   background: url(/assets/images/bitu/mask/mask-bottom.svg) no-repeat 0 100%;
   background-color: #ffb700;
 }
-.swiper-container--classes .swiper-slide:nth-child(2) .gw-classes__header:after {
+.swiper-container--classes
+  .swiper-slide:nth-child(2)
+  .gw-classes__header:after {
   background-color: #000;
 }
 .swiper-container--classes .swiper-slide:nth-child(3) .gw-classes {
@@ -8915,7 +8990,9 @@ ul {
   background: url(/assets/images/bitu/mask/mask-bottom.svg) no-repeat 0 100%;
   background-color: #51c580;
 }
-.swiper-container--classes .swiper-slide:nth-child(6) .gw-classes__header:after {
+.swiper-container--classes
+  .swiper-slide:nth-child(6)
+  .gw-classes__header:after {
   background-color: #000;
 }
 .swiper-container--classes .swiper-slide:nth-child(7) .gw-classes {
@@ -9046,24 +9123,24 @@ ul {
   text-align: left;
   background-color: #fff;
   width: 648px;
-    padding: 24px 40px;
+  padding: 24px 40px;
 }
 
-.banner-form .form-row {
+.banner-form__select {
   margin-bottom: 12px;
 }
 
-.banner-form .form-group {
+.banner-form_text {
   margin-bottom: 12px !important;
 }
 
-.banner-form button {
+.banner-form__btn {
   padding: 10px 30px;
   border: none !important;
-  background-color: #FF6D03 !important;
+  background-color: #ff6d03 !important;
 }
 
-.banner-form .text-file {
+.text-file {
   margin-bottom: 6px;
   display: inline-block;
 }
@@ -9075,7 +9152,130 @@ ul {
 .banner-image {
   width: 624px;
   height: 695px;
+  background-image: url(/assets/images/bitu/moderator.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+@media (max-width: 979.98px) {
+  .banner-image,
+  .banner-form {
+    width: 100% !important;
+  }
+
+  .banner-image {
+    background-image: url(/assets/images/bitu/moderator-mobile.png);
+    /* height: auto !important; */
+    background-size: cover;
+    max-height: 100%;
+    width: 100%;
+    height: 300px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 12px;
+
+  }
+
+  .gw-visual__wrapper {
+    flex-direction: column;
+    box-shadow: 4px 4px 2px 4px gray;
+  }
+}
+
+.about-bitu {
+  font-size: 20px;
+}
+
+.about-bitu__text {
+  line-height: 25.3px;
+  font-weight: 400;
+  color: black;
+}
+
+.about-bitu__heart {
+  margin-right: 22px;
+}
+
+.about-bitu__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.requirement__title {
+  margin-bottom: 16px;
+}
+
+.requirement__description {
+  font-size: 18px;
+}
+
+.requirement__wrapper {
+  flex-direction: column;
+}
+
+@media (max-width: 739.98px) {
+  .about-bitu__text {
+    font-size: 16px;
+  }
+
+  .requirement__wrapper {
+    flex-direction: row;
+  }
+
+  .requirement__title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .requirement__description {
+    font-size: 14px;
+    line-height: 17.71px;
+  }
+}
+
+.why-bitu__wrapper {
+  max-width: 840px;
+}
+.why-bitu {
+  margin: 108px 0 51px;
+  display: flex;
+  justify-content: center;
+}
+
+.why-bitu__text {
+  font-size: 48px;
+  font-weight: 600;
+  font-size: 61px;
+  padding: 0 12px;
+}
+
+.bitu-introduce-video {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: 474px;
+}
+
+@media (max-width: 739.98px) {
+  .bitu-introduce-video {
+    width: 100%;
+    height: 200px;
+    min-height: 197px;
+    margin-bottom: 71px;
+    min-width: 353px;
+  }
+
+  .why-bitu {
+    margin-top: 56px;
+  }
+
+  .why-bitu__text {
+    font-size: 28px;
+   line-height: 35px;
+   text-align: center;
+   max-width: 300px;
+  }
 }
