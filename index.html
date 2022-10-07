@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="page-home">
@@ -36,61 +37,85 @@
         </div>
       </div>
       <div class="gw-visual">
-        <div class="container">
+        <div class="container pb-3">
           <div class="gw-visual__content">
             <div class="wow bounceInUp" data-wow-delay="0.25s">
-              <div class="gw-visual__wrapper shadow  rellax d-flex" data-rellax-speed="-1">
+              <div class="gw-visual__wrapper shadow rellax d-flex">
                 <div class="banner-image"></div>
 
-                <div class="banner-form shadow">
+                <div class="banner-form">
                   <h3>Sign up here</h3>
-                  <form>
+
+                  
+                  <form id="frm-signUp" novalidate>
                     <div class="form-group banner-form_text">
-                      <label for="exampleInputName">Name</label>
-                      <input type="email" class="form-control" id="exampleInputName" placeholder="Name">
+                      <label for="ipt-name">Name</label>
+                      <input type="text" class="form-control" id="ipt-name" placeholder="Name" required>
+                      <div class="invalid-feedback" id="ipt-name-validation"></div>
                     </div>
+
                     <div class="banner-form__select form-row">
                       <div class="col">
-                        <label for="birthday">Year of birth:</label>
-                        <input type="date" class="form-control" id="birthday" name="birthday">
+                        <label for="ipt-yob">Year of birth:</label>
+                        <input type="date" class="form-control" id="ipt-yob" name="birthday" required>
+                        <div class="invalid-feedback" id="ipt-yob-validation"></div>
                       </div>
                       <div class="col">
-                        <label for="birthday">Nationality:</label>
-                        <select class="custom-select">
-                          <option selected>- Select -</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <label for="ipt-nationality">Nationality:</label>
+                        <select id="ipt-nationality" class="form-control">
+                          <option value="">-- Select --</option>
                         </select>
+                        <div class="invalid-feedback" id="ipt-nationality-validation"></div>
                       </div>
                     </div>
+
                     <div class="form-group banner-form_text">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Email">
+                      <label for="ipt-email">Email</label>
+                      <input type="email" class="form-control" id="ipt-email" aria-describedby="emailHelp"
+                        placeholder="Email" required>
+                      <div class="invalid-feedback" id="ipt-email-validation"></div>
                     </div>
+
                     <span class="text-file">1 minute video/audio intro</span>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input " id="customFile">
-                      <label class="custom-file-label" for="customFile">No file for upload</label>
+                      <input type="file" class="custom-file-input " id="ipt-intro" hidden accept=".wmv,.m4r,.mp4,.3gpp,.mpeg,.mpeg4,application/octet-stream,.mov,.webm,.mp3,.wav"/> 
+           
+                      <label id="ipt-intro__preview" class="custom-file-label preview" for="ipt-intro">No file for
+                        upload</label>
+                      <div class="invalid-feedback" id="ipt-intro-validation"></div>
                     </div>
+
                     <div class="form-group banner-form_text">
-                      <label for="exampleInputTele">Telegram Contact</label>
-                      <input type="text" class="form-control" id="exampleInputTele" aria-describedby="emailHelp"
-                        placeholder="Telegram Contact">
+                      <label for="ipt-telegram">Telegram Contact</label>
+                      <input type="text" class="form-control" id="ipt-telegram" aria-describedby="emailHelp"
+                        placeholder="Telegram Contact" required>
+                      <div class="invalid-feedback" id="ipt-telegram-validation"></div>
                     </div>
+
+
                     <span class="text-file">Curriculum Vitae</span>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile-cv">
-                      <label class="custom-file-label" for="customFile-cv">No file for upload</label>
+                      <input id="ipt-cv" class="form-control" type="file" multiple hidden accept=".jpg,.png,.jpeg,.pdf,.docx,.doc,.xlsx,.xls"/>   
+                      <label id="ipt-cv__preview" class="custom-file-label preview" for="ipt-cv">No file for
+                        upload</label>
+                      <div class="invalid-feedback" id="ipt-cv-validation"></div>
+
                     </div>
+
+
                     <span class="text-file">Certificates</span>
                     <div class="custom-file ">
-                      <input type="file" class="custom-file-input" id="customFile-cv">
-                      <label class="custom-file-label" for="customFile-cv">No file for upload </label>
+                      <input id="ipt-cert" class="form-control" type="file" multiple hidden
+                        accept=".jpg,.png,.jpeg,.pdf,.docx,.doc,.xlsx,.xls" />
+                      <label id="ipt-cert__preview" class="preview custom-file-label" for="ipt-cert">No file for upload
+                      </label>
+                      <div class="invalid-feedback" id="ipt-cert-validation"></div>
+
                     </div>
-                    <button type="submit" class="btn btn-primary banner-form__btn">Send</button>
+                    <button type="submit" id="btn-submit" class="btn btn-primary banner-form__btn">Send</button>
                   </form>
+
+
                 </div>
               </div>
             </div>
@@ -324,7 +349,7 @@
 
 
 
-    <section class="gw-section gw-section--block-4">
+    <section class="gw-section gw-section--block-4 information-video">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 why-bitu">
@@ -337,7 +362,7 @@
                     <span class="text-primary">6 reasons </span> why Bitu is the best option for your teaching career
                   </p>
                   <div class="gw-interactive w-100">
-                    <iframe class="bitu-introduce-video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <iframe class="bitu-introduce-video" src="https://www.youtube.com/embed/vgz8Y0hQT4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </iframe>
                   </div>
                 </div>
@@ -349,20 +374,35 @@
       </div>
     </section>
 
-
-
-
-
   </main>
   <footer class="gw-footer">
     <div class="container gw-footer__container">
-      <div class="gw-footer__logo">
-        <img src="/assets/images/bitu/logo.svg" alt="bitu">
+      <div class="row d-flex justify-content-between w-100 mt-4 align-items-center p-3">
+        <div class="gw-footer__logo">
+          <img src="/assets/images/bitu/logo.svg" class="mb-3" alt="bitu">
+          <p class="gw-footer__logo-text">Copyright @ 2021 Bitu. All rights reserved</p>
+        </div>
+        <ul>
+          <li class="gw-footer__link">
+            <img class="mr-2 footer-contact" src="/assets/images/bitu/icons/email.svg" alt="">
+            <span>recruiment.bitu@gmail.com</span>
+          </li>
+          <li class="gw-footer__link">
+            <img class="mr-2 footer-contact" src="/assets/images/bitu/icons/telegram.svg" alt="">
+            <span>(+84) 834873081</span>
+          </li>
+          <li class="gw-footer__link">
+            <img class="mr-2 footer-contact" src="/assets/images/bitu/icons/facebook.svg" alt="">
+            <span>Tuyển dụng Bitu - Speaking English Club</span>
+          </li>
+        </ul>
+        <div>
+          <a href="#">
+            <span class="text-white text-decoration-none mr-2">Follow us on Youtube</span>
+            <img src="/assets/images/bitu/icons/youtube.svg" alt="">
+          </a>
+        </div>
       </div>
-      <ul class="gw-footer__links">
-
-       
-      </ul>
 
 
     </div>
@@ -370,9 +410,11 @@
 
 
   <script src="./assets/scripts/vendor.js"></script>
-
+  <script src="./assets/scripts/sweetalert.js"></script>
+  <script src="./assets/scripts/env.js"></script>
+  <script src="./assets/scripts/api.js"></script>
   <script src="./assets/scripts/main.js"></script>
-
+  <script src="./assets/scripts/sign-up.js"></script>
 </body>
 
 </html>

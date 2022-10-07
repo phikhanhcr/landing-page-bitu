@@ -1,1 +1,167 @@
-"use strict";var _createClass=function(){function a(e,n){for(var i=0;i<n.length;i++){var a=n[i];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}return function(e,n,i){return n&&a(e.prototype,n),i&&a(e,i),e}}();function _classCallCheck(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}function throttle(i,a,t){var o=void 0,l=void 0,s=void 0,r=null,c=0;t=t||{};function u(){c=!1===t.leading?0:Date.now(),r=null,s=i.apply(o,l),o=l=null}return function(){var e=Date.now();c||!1!==t.leading||(c=e);var n=a-(e-c);return o=this,l=arguments,n<=0?(clearTimeout(r),r=null,c=e,s=i.apply(o,l),o=l=null):r||!1===t.trailing||(r=setTimeout(u,n)),s}}var App=function(){function e(){_classCallCheck(this,e)}return _createClass(e,[{key:"isTouchDevice",value:function(){return"ontouchstart"in window||0<navigator.maxTouchPoints||0<navigator.msMaxTouchPoints}},{key:"initWow",value:function(){(new window.WOW).init()}},{key:"initRellax",value:function(){var e=new window.Rellax(".rellax");console.log(e)}},{key:"initParallax",value:function(){this.isTouchDevice()||$(".gw-parallax").each(function(e,n){n=new window.Parallax($(n)[0]);console.log(n)})}},{key:"initHeader",value:function(){$(window).on("scroll",throttle(this.checkNavbar,50)),this.checkNavbar(),$("#gw-navbar").on("show.bs.collapse",function(){$("body").addClass("open-navbar")}).on("hide.bs.collapse",function(){$("body").removeClass("open-navbar")})}},{key:"checkNavbar",value:function(){var e=$("#js-navbar"),n=$(window).scrollTop();e.toggleClass("gw-navbar--sticky",n>e.height())}},{key:"init",value:function(){this.isTouchDevice()||document.body.classList.add("no-touch-device"),this.initTestimonial(),this.initLogo(),this.initRellax(),this.initWow(),this.initParallax(),this.initHeader()}},{key:"initLogo",value:function(){var e=$(".swiper-container--logo");e.length&&new window.Swiper(e[0],{slidesPerView:6,spaceBetween:32,loop:!0,autoplay:{disableOnInteraction:!1,delay:3e3},breakpoints:{559:{slidesPerView:"auto",spaceBetween:16},739:{slidesPerView:3,spaceBetween:32},979:{slidesPerView:3,spaceBetween:32},1263:{slidesPerView:4,spaceBetween:32}}})}},{key:"initTestimonial",value:function(){var e=$(".swiper-container--classes");e.length&&(e.parents(".gw-section"),new window.Swiper(e[0],{slidesPerView:4,spaceBetween:32,breakpoints:{739:{slidesPerView:1,spaceBetween:32},1263:{slidesPerView:2,spaceBetween:32}},pagination:{el:e.find(".swiper-pagination"),clickable:!0}}))}}]),e}();$(document).ready(function(){(new App).init()});
+
+function throttle(func, wait, options) {
+  let context,
+    args,
+    result;
+  let timeout = null;
+  let previous = 0;
+  options || (options = {});
+
+  const later = function later() {
+    previous = options.leading === false ? 0 : Date.now();
+    timeout = null;
+    result = func.apply(context, args);
+    context = args = null;
+  };
+
+  return function () {
+    const now = Date.now();
+    if (!previous && options.leading === false) previous = now;
+
+    const remaining = wait - (now - previous);
+    context = this;
+    args = arguments;
+    if (remaining <= 0) {
+      clearTimeout(timeout);
+      timeout = null;
+      previous = now;
+      result = func.apply(context, args);
+      context = args = null;
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+}
+
+class App {
+  isTouchDevice() {
+    return ('ontouchstart' in window) ||
+      (navigator.maxTouchPoints > 0) ||
+      (navigator.msMaxTouchPoints > 0);
+  }
+
+  initWow() {
+    new window.WOW().init();
+  }
+
+  initRellax() {
+    const rellax = new window.Rellax('.rellax');
+    console.log(rellax);
+  }
+
+  initParallax() {
+    if (this.isTouchDevice()) {
+      return;
+    }
+    $('.gw-parallax').each((index, item) => {
+      const instance = new window.Parallax($(item)[0]);
+      console.log(instance);
+    });
+  }
+
+  initHeader() {
+    $(window).on('scroll', throttle(this.checkNavbar, 50));
+    this.checkNavbar();
+
+    $('#gw-navbar')
+      .on('show.bs.collapse', () => {
+        $('body').addClass('open-navbar');
+      })
+      .on('hide.bs.collapse', () => {
+        $('body').removeClass('open-navbar');
+      });
+  }
+
+  checkNavbar() {
+    const $navbar = $('#js-navbar');
+    const $body = $(window);
+    const currScrollTop = $body.scrollTop();
+    $navbar.toggleClass('gw-navbar--sticky', currScrollTop > $navbar.height());
+  }
+
+
+  init() {
+    if (!this.isTouchDevice()) {
+      document.body.classList.add('no-touch-device');
+    }
+    const heightImage = $('.gw-visual__wrapper').height()
+    $('.banner-image').height(heightImage)
+
+
+    this.initTestimonial();
+    this.initLogo();
+    this.initRellax();
+    this.initWow();
+    this.initParallax();
+    this.initHeader();
+  }
+
+  initLogo() {
+    const $slider = $('.swiper-container--logo');
+    if ($slider.length) {
+      new window.Swiper($slider[0], { //eslint-disable-line
+        slidesPerView: 6,
+        spaceBetween: 32,
+        loop: true,
+        autoplay: {
+          disableOnInteraction: false,
+          delay: 3000,
+        },
+        breakpoints: {
+          559: {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+          },
+          739: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+          979: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+          1263: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+          },
+        },
+      });
+    }
+  }
+
+  initTestimonial() {
+    const $slider = $('.swiper-container--classes');
+    if ($slider.length) {
+      const $section = $slider.parents('.gw-section');
+      new window.Swiper($slider[0], { //eslint-disable-line
+        slidesPerView: 4,
+        spaceBetween: 32,
+        breakpoints: {
+          739: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+          },
+          1263: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+        },
+        // If we need pagination
+        // navigation: {
+        //   nextEl: $section.find('.gw-section__next'),
+        //   prevEl: $section.find('.gw-section__prev'),
+        // },
+        pagination: {
+          el: $slider.find('.swiper-pagination'),
+          clickable: true,
+        },
+      });
+    }
+  }
+}
+
+$(document).ready(() => {
+  const app = new App();
+  app.init();
+});
