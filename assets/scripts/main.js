@@ -86,9 +86,15 @@ class App {
       document.body.classList.add('no-touch-device');
     }
     const heightImage = $('.gw-visual__wrapper').height()
-    $('.banner-image').height(heightImage)
 
+    if ($(document).width() > 972) {
+      $('.banner-image').height(heightImage)
 
+    }
+    // lib stupid, need to fix when scroll
+    window.addEventListener('scroll', () => {
+      $('.gw-visual__wrapper').css('transform', 'translate3d(0px, 0px, 0px)')
+    })
     this.initTestimonial();
     this.initLogo();
     this.initRellax();

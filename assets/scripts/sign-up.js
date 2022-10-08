@@ -125,7 +125,7 @@ const SIGN_UP = {
       } else {
         msg = `${file.name}, file size ${this.getFileSize(file.size)}.`;
       }
-      $(preview_id).append(`<span>${msg}</span>`);
+      $(preview_id).append(`<div>${msg}</div>`);
     }
   },
 
@@ -144,7 +144,6 @@ const SIGN_UP = {
           $(`#${id}-validation`).html('Invalid file type');
           document.getElementById(id).setCustomValidity(`InvalidExtensions`);
           $(`#${id}-validation`).show();
-          console.log("456")
           return false;
         }
       }
@@ -193,7 +192,6 @@ const SIGN_UP = {
       curriculum_vitae_urls: data.curriculum_vitae_urls,
       certificate_urls: data.certificate_urls,
     }
-    console.log({ req })
     api.postRegisterMod(req).done((res) => {
       if (res && res.error_code == 0) {
         Swal.fire({
@@ -252,7 +250,9 @@ const SIGN_UP = {
     if (!document.getElementById("frm-signUp").checkValidity()) {
       $("#frm-signUp").addClass("form-validated");
       const heightImage = $('.gw-visual__wrapper').height()
-      $('.banner-image').height(heightImage)
+      if ($(document).width() > 972) {
+        $('.banner-image').height(heightImage)
+      }
       return;
     }
 

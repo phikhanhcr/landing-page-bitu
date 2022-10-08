@@ -9320,10 +9320,16 @@ ul {
 .is-invalid ~ .invalid-tooltip {
   display: block;
 }
-
-#ipt-intro__preview {
+ #ipt-intro__preview, #ipt-cv__preview, #ipt-cert__preview {
   overflow: hidden;
-}
+  /* margin-top: 44px; */
+  
+} 
+
+ #ipt-intro-validation, #ipt-cv-validation, #ipt-cert-validation {
+  margin-top: 44px;
+  
+} 
 .information-video {
   background-image: url(/assets/images/bitu/icons/video-bg.svg);
 }
