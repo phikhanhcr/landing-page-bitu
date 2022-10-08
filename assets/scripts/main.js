@@ -91,80 +91,13 @@ class App {
       $('.banner-image').height(heightImage)
 
     }
-    // lib stupid, need to fix when scroll
-    window.addEventListener('scroll', () => {
-      $('.gw-visual__wrapper').css('transform', 'translate3d(0px, 0px, 0px)')
-    })
-    this.initTestimonial();
-    this.initLogo();
+
     this.initRellax();
     this.initWow();
     this.initParallax();
     this.initHeader();
   }
 
-  initLogo() {
-    const $slider = $('.swiper-container--logo');
-    if ($slider.length) {
-      new window.Swiper($slider[0], { //eslint-disable-line
-        slidesPerView: 6,
-        spaceBetween: 32,
-        loop: true,
-        autoplay: {
-          disableOnInteraction: false,
-          delay: 3000,
-        },
-        breakpoints: {
-          559: {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-          },
-          739: {
-            slidesPerView: 3,
-            spaceBetween: 32,
-          },
-          979: {
-            slidesPerView: 3,
-            spaceBetween: 32,
-          },
-          1263: {
-            slidesPerView: 4,
-            spaceBetween: 32,
-          },
-        },
-      });
-    }
-  }
-
-  initTestimonial() {
-    const $slider = $('.swiper-container--classes');
-    if ($slider.length) {
-      const $section = $slider.parents('.gw-section');
-      new window.Swiper($slider[0], { //eslint-disable-line
-        slidesPerView: 4,
-        spaceBetween: 32,
-        breakpoints: {
-          739: {
-            slidesPerView: 1,
-            spaceBetween: 32,
-          },
-          1263: {
-            slidesPerView: 2,
-            spaceBetween: 32,
-          },
-        },
-        // If we need pagination
-        // navigation: {
-        //   nextEl: $section.find('.gw-section__next'),
-        //   prevEl: $section.find('.gw-section__prev'),
-        // },
-        pagination: {
-          el: $slider.find('.swiper-pagination'),
-          clickable: true,
-        },
-      });
-    }
-  }
 }
 
 $(document).ready(() => {
