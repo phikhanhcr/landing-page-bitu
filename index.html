@@ -9,9 +9,9 @@
   <title>Trang chủ | Bitu</title>
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
+
 </head>
 
 <body class="page-home">
@@ -47,7 +47,7 @@
                 <div class="banner-form">
                   <h3>Sign up here</h3>
 
-                  
+
                   <form id="frm-signUp" novalidate>
                     <div class="form-group banner-form_text">
                       <label for="ipt-name">Name</label>
@@ -79,8 +79,9 @@
 
                     <span class="text-file">1 minute video/audio intro</span>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input " id="ipt-intro" hidden accept=".wmv,.m4r,.mp4,.3gpp,.mpeg,.mpeg4,application/octet-stream,.mov,.webm,.mp3,.wav"/> 
-           
+                      <input type="file" class="custom-file-input " id="ipt-intro" hidden
+                        accept=".wmv,.m4r,.mp4,.3gpp,.mpeg,.mpeg4,application/octet-stream,.mov,.webm,.mp3,.wav" />
+
                       <label id="ipt-intro__preview" class="custom-file-label preview" for="ipt-intro">No file for
                         upload</label>
                       <div class="invalid-feedback" id="ipt-intro-validation"></div>
@@ -96,7 +97,8 @@
 
                     <span class="text-file">Curriculum Vitae</span>
                     <div class="custom-file">
-                      <input id="ipt-cv" class="form-control" type="file" multiple hidden accept=".jpg,.png,.jpeg,.pdf,.docx,.doc,.xlsx,.xls"/>   
+                      <input id="ipt-cv" class="form-control" type="file" multiple hidden
+                        accept=".jpg,.png,.jpeg,.pdf,.docx,.doc,.xlsx,.xls" />
                       <label id="ipt-cv__preview" class="custom-file-label preview" for="ipt-cv">No file for
                         upload</label>
                       <div class="invalid-feedback" id="ipt-cv-validation"></div>
@@ -113,7 +115,11 @@
                       <div class="invalid-feedback" id="ipt-cert-validation"></div>
 
                     </div>
-                    <button type="submit" id="btn-submit" class="btn btn-primary banner-form__btn text-white">Send</button>
+                    <div class="w-100 wrapper-btn_form">
+
+                      <button type="submit" id="btn-submit"
+                        class="btn btn-primary banner-form__btn text-white">Send</button>
+                    </div>
                   </form>
 
 
@@ -165,10 +171,14 @@
                 </div>
               </div>
               <div class="w-100 d-flex mt-5 pb-3">
-                <a target="_blank"  href="https://apps.apple.com/by/app/bitu-luy%E1%BB%87n-n%C3%B3i-ti%E1%BA%BFng-anh/id1551918315" class="mr-3 btn-app">
+                <a target="_blank"
+                  href="https://apps.apple.com/by/app/bitu-luy%E1%BB%87n-n%C3%B3i-ti%E1%BA%BFng-anh/id1551918315"
+                  class="mr-3 btn-app">
                   <img src="/assets/images/bitu/app-store.png" alt="apple-store" class="img-fluid">
                 </a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.bitu.user&utm_source=bituweb&utm_medium=landingpage&utm_campaign=official" class="btn-app">
+                <a target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.bitu.user&utm_source=bituweb&utm_medium=landingpage&utm_campaign=official"
+                  class="btn-app">
                   <img src="/assets/images/bitu/google-play.png" alt="google-play" class="img-fluid">
                 </a>
                 </a>
@@ -185,7 +195,8 @@
                 </div>
               </div>
               <div class="gw-mobile about-bitu__mobile">
-                <img src="/assets/images/bitu/mascot-mb.png" alt="Trò chuyện, nhắn tin với mọi người" class="img-fluid">
+                <img src="/assets/images/bitu/icons/icon-bitu-mobile.svg" alt="Trò chuyện, nhắn tin với mọi người"
+                  class="img-fluid">
               </div>
             </div>
           </div>
@@ -296,7 +307,8 @@
                   <img src="/assets/images/bitu/icons/icon-money.svg" class="d-block" alt="" />
                 </div>
                 <div class="benefit-text">
-                  Receive a monthly guaranteed <br /> income up to<span class="text-main-color"> $450/month or <br /> even
+                  Receive a monthly guaranteed <br /> income up to<span class="text-main-color"> $450/month or <br />
+                    even
                     more </span>
                 </div>
               </div>
@@ -355,17 +367,18 @@
         <div class="row justify-content-between">
           <div class="col-12 why-bitu">
             <section class="text-center why-bitu__wrapper">
-              <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-column justify-content-center align-items-center">
 
 
-                  <p class="why-bitu__text gw-section__heading wow fadeInDown text-center">
-                    <span class="text-primary">6 reasons </span> why Bitu is the best option for your teaching career
-                  </p>
-                  <div class="gw-interactive w-100">
-                    <iframe class="bitu-introduce-video" src="https://www.youtube.com/embed/vgz8Y0hQT4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </iframe>
-                  </div>
+                <p class="text-center why-bitu__text">
+                  <span class="text-primary bold">6 reasons </span> why Bitu is the best option for your teaching career
+                </p>
+                <div class="gw-interactive w-100">
+                  <iframe class="bitu-introduce-video" src="https://www.youtube.com/embed/vgz8Y0hQT4A"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  </iframe>
                 </div>
               </div>
             </section>
@@ -378,7 +391,7 @@
   </main>
   <footer class="gw-footer">
     <div class="container gw-footer__container">
-      <div class="row d-flex justify-content-between w-100 mt-4 align-items-center p-3">
+      <div class="row mt-4  p-3 wrapper-footer">
         <div class="gw-footer__logo">
           <img src="/assets/images/bitu/logo.svg" class="mb-3" alt="bitu">
           <p class="gw-footer__logo-text">Copyright @ 2021 Bitu. All rights reserved</p>
