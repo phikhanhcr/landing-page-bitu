@@ -32,7 +32,7 @@
   --breakpoint-md: 740px;
   --breakpoint-lg: 980px;
   --breakpoint-xl: 1264px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-family-sans-serif: 'Circular Std', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
@@ -65,7 +65,7 @@ section {
 }
 body {
   margin: 0;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -7470,7 +7470,7 @@ ul {
   border: 1.5px solid #1a202c;
 }
 .gw-section--hero .gw-section__description {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 44px;
   margin: 16px auto 0;
   color: #fff;
@@ -7486,6 +7486,7 @@ ul {
 @media (max-width: 979.98px) {
   .gw-section--hero .gw-section__description {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 .gw-section--hero .gw-section__description strong {
@@ -7778,7 +7779,7 @@ ul {
 @media (min-width: 1264px) {
   .gw-section--block-2 .gw-section__content,
   .gw-section--block-4 .gw-section__content {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
   }
 }
@@ -8115,7 +8116,6 @@ ul {
   left: 0;
   right: 0;
   background-color: #ffb700;
-  border: 2px solid #1a202c;
   z-index: 0;
   pointer-events: none;
   -webkit-border-radius: 16px;
@@ -8130,6 +8130,7 @@ ul {
 }
 @media (max-width: 979.98px) {
   .gw-section--block-1 .gw-section__content:after {
+    border: 2px solid #1a202c;
     top: 115px;
     bottom: 100px;
   }
@@ -9084,7 +9085,7 @@ ul {
 
   .gw-visual__wrapper {
     flex-direction: column;
-    box-shadow: 4px 4px 2px 4px gray;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -9235,4 +9236,27 @@ ul {
 } 
 .information-video {
   background-image: url(/assets/images/bitu/icons/video-bg.svg);
+}
+
+
+.text-main-color {
+  color: #FF6D03;
+}
+
+.benefit-text {
+  font-size: 20px;
+  color: black;
+}
+
+@media (max-width: 739.98px) {
+  .benefit-text {
+    font-size: 14px;
+    color: black;
+  }
+}
+
+.gw-visual__wrapper {
+  transform: translate3d(0px, 0px, 0px) !important;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
 }

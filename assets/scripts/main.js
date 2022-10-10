@@ -89,7 +89,6 @@ class App {
 
     if ($(document).width() > 972) {
       $('.banner-image').height(heightImage)
-
     }
 
     this.initRellax();

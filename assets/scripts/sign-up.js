@@ -22,6 +22,8 @@ const SIGN_UP = {
       id: "ipt-yob",
       display: "Year of birth",
       required: true,
+      minlength: 1970,
+      maxlength: 2010,
     },
     nationality: {
       id: "ipt-nationality",
@@ -165,8 +167,17 @@ const SIGN_UP = {
         $(`#${id}-validation`).html(`Invalid ${value.display}. Allowed format: ${value.format}`);
         document.getElementById(id).setCustomValidity(`NotMatchRegex`);
         return false;
-
       }
+
+      if (value.id === 'ipt-yob') {
+        if (value.maxlength && (new Date($('#ipt-yob').val()).getFullYear() > value.maxlength) || new Date($('#ipt-yob').val()).getFullYear() < value.minlength) {
+          $(`#${id}-validation`).html(`Invalid ${value.display}. Year of birth must be between ${value.minlength} and ${value.maxlength} `);
+          document.getElementById(id).setCustomValidity(`NotMatchRegex`);
+          return false;
+        }
+      }
+
+
       return true;
     }
   },
@@ -184,7 +195,7 @@ const SIGN_UP = {
   callSubmitAPI: function (data) {
     const req = {
       name: $('#ipt-name').val().trim(),
-      birth_year: new Date($('#ipt-yob').val()),
+      birth_year: `${new Date($('#ipt-yob').val())}`,
       nationality: $('#ipt-nationality').val(),
       email: $('#ipt-email').val(),
       intro_url: data.intro_url,
