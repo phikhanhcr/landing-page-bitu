@@ -195,7 +195,7 @@ const SIGN_UP = {
   callSubmitAPI: function (data) {
     const req = {
       name: $('#ipt-name').val().trim(),
-      birth_year: `${new Date($('#ipt-yob').val())}`,
+      birth_year: `${new Date($('#ipt-yob').val()).toLocaleDateString()}`,
       nationality: $('#ipt-nationality').val(),
       email: $('#ipt-email').val(),
       intro_url: data.intro_url,
