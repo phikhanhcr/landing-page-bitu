@@ -6804,6 +6804,7 @@ ul {
     margin-bottom: -96px;
   }
 }
+
 @media (min-width: 980px) and (max-width: 1263.98px) {
   .gw-image--overflow {
     margin-top: -72px;
@@ -9259,4 +9260,30 @@ ul {
   transform: translate3d(0px, 0px, 0px) !important;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
+}
+
+.gw-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.gw-footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.gw-section--block-2 h2, .gw-section--block-1 h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+@media (max-width: 739.98px) {
+  .gw-section--block-2 h2, .gw-section--block-1 h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  .gw-section__content {
+    padding: 30px
+  }
 }
